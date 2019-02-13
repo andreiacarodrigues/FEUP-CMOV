@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CMOV1_CAF</string>
+    <string name="val_order">Validate your order here!</string>
+    <string name="products">Products Ordered:</string>
+    <string name="vouchers">Vouchers Used:</string>
+    <string name="total">Total to Pay:</string>
+    <string name="back">Back</string>
+</resources>

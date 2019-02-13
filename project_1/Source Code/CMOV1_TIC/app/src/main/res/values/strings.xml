@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CMOV1_TIC</string>
+    <string name="val_tickets">Validate your tickets here!</string>
+    <string name="back">Back</string>
+</resources>

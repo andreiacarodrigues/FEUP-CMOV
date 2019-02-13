@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CMOV2_Xamarin"
+             x:Class="CMOV2_Xamarin.MainPage">
+
+    <StackLayout x:Name="container" VerticalOptions="FillAndExpand" >
+
+        <Label x:Name="app_title" Text="Stock Analysis"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               FontSize="40"
+               VerticalOptions="CenterAndExpand"
+               TextColor="DodgerBlue"/>
+
+        <StackLayout VerticalOptions="CenterAndExpand"  HorizontalOptions="Center">
+            
+            <Label x:Name="information"
+               Text="Select one or more companies to analyse their close values for the past 7 or 30 days."
+               HorizontalOptions="CenterAndExpand"
+               FontSize="Default"
+               TextColor="Black"/>
+            
+        </StackLayout>
+
+        <StackLayout  VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+            
+            <Label x:Name="company_1"
+               Text="First Company:"
+               HorizontalOptions="Start"
+               FontSize="15"
+               TextColor="Black"/>
+           
+            <Picker x:Name="company_picker_1" 
+                SelectedIndexChanged="OnPickerSelectedIndexChanged"
+                FontSize="15"
+                WidthRequest="600"
+                VerticalOptions="CenterAndExpand"/>
+            
+        </StackLayout>
+
+        <StackLayout  VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+
+            <Label x:Name="company_2"
+               Text="Second Company:"
+               HorizontalOptions="Start"
+               FontSize="15"
+               TextColor="Black"/>
+            
+            <Picker x:Name="company_picker_2" 
+                FontSize="15"
+                SelectedIndexChanged="OnPickerSelectedIndexChanged" 
+                WidthRequest="600"
+                VerticalOptions="CenterAndExpand"/>
+            
+        </StackLayout>
+
+        <StackLayout  VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+
+            <Label x:Name="quotes"
+               Text="Quotes Extension:"
+               HorizontalOptions="Start"
+               FontSize="15"
+               TextColor="Black"/>
+
+            <Picker x:Name="quotes_picker" 
+                SelectedIndexChanged="OnPickerSelectedIndexChanged" 
+                WidthRequest="600"
+                FontSize="15"
+                VerticalOptions="CenterAndExpand">
+                <Picker.Items>
+                    <x:String>7 days</x:String>
+                    <x:String>30 days</x:String>
+                </Picker.Items>
+            </Picker>
+            
+        </StackLayout>
+
+        <Label x:Name="error"
+            FontSize="13"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="CenterAndExpand"
+            TextColor="Red"/>
+
+        <Button 
+            x:Name="generate"
+            Text="Generate Graph"
+            Clicked="OnButtonClicked"
+            WidthRequest="100"
+            BackgroundColor="DodgerBlue"
+            TextColor="White"
+            FontSize="15"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center"/>
+        
+    </StackLayout>
+
+</ContentPage>

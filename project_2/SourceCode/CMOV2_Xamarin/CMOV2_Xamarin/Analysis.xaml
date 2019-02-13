@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CMOV2_Xamarin.Analysis">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label x:Name="company_name" Text="Company"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               VerticalOptions="CenterAndExpand"
+               TextColor="DodgerBlue"/>
+            <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout x:Name="container" Padding="5,0,5,0" HorizontalOptions="FillAndExpand">
+
+                </StackLayout>
+            </ScrollView>
+            <Button 
+            x:Name="back"
+           
+            Text="Back"
+            BackgroundColor="DodgerBlue"
+            TextColor="White"
+            FontSize="15"
+                Clicked="OnButtonClicked"
+            VerticalOptions="End"
+            HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

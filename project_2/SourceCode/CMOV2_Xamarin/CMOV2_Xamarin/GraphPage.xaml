@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+    x:Class="CMOV2_Xamarin.GraphPage">
+
+    <!--<microcharts:ChartView x:Name="chartView" />-->
+
+   <!-- <AbsoluteLayout>
+        <oxyplot:PlotView
+            x:Name="chartView"
+            AbsoluteLayout.LayoutFlags="All"
+            AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+            />
+    </AbsoluteLayout>-->
+
+    <!--<Grid  RowSpacing = "0" VerticalOptions = "FillAndExpand"  HorizontalOptions = "FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <microcharts:ChartView x:Name="chartView" Grid.Row="0" Grid.Column="0"/>
+        <microcharts:ChartView x:Name="chartView2" Grid.Row="0" Grid.Column="0"/>
+    </Grid>-->
+
+    <StackLayout>
+
+        <chart:SfChart x:Name="chart" VerticalOptions="FillAndExpand">
+
+            <chart:SfChart.PrimaryAxis>
+
+                <chart:CategoryAxis>
+
+                </chart:CategoryAxis>
+
+            </chart:SfChart.PrimaryAxis>
+
+            <chart:SfChart.SecondaryAxis>
+
+                <chart:NumericalAxis>
+
+                </chart:NumericalAxis>
+
+            </chart:SfChart.SecondaryAxis>
+
+        </chart:SfChart>
+
+        <Button 
+            x:Name="back"
+            Clicked="OnButtonClicked"
+            Text="Back"
+            BackgroundColor="DodgerBlue"
+            TextColor="White"
+            FontSize="15"
+            VerticalOptions="End"
+            HorizontalOptions="Center"/>
+
+    </StackLayout>
+
+</ContentPage>

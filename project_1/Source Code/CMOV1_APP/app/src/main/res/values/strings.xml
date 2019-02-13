@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">CMOV1_APP</string>
+    <string name="register_title">Register</string>
+    <string name="register_name">Name</string>
+    <string name="register_nif">NIF</string>
+    <string name="register_card_number">Credit Card Number</string>
+    <string name="register_card_type">Credit Card Type</string>
+    <string name="register_card_exp">Credit Card Expiration</string>
+    <string name="register_exp_month">Month</string>
+    <string name="register_exp_year">Year</string>
+    <string name="register_username">Username</string>
+    <string name="password">Password</string>
+    <string-array name="card_types">
+        <item>Visa/MasterCard</item>
+        <item>PayPal</item>
+        <item>American Express</item>
+    </string-array>
+    <string-array name="months">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="years">
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+    </string-array>
+    <string name="login_title">Login</string>
+    <string name="search_hint">Search</string>
+    <string name="event">Event</string>
+    <string name="payment">Payment</string>
+    <string name="name_label">Name:</string>
+    <string name="date_label">Date:</string>
+    <string name="price_label">Price:</string>
+    <string name="nif_label">NIF: </string>
+    <string name="tickets_label">Nr of Tickets: </string>
+    <string name="card_number">Credit Card Nr:</string>
+    <string name="card_type">Credit Card Type:</string>
+    <string name="card_exp">Credit Card Exp.:</string>
+    <string name="buy_ticket_label">Buy Tickets</string>
+    <string name="confirm">Confirm </string>
+    <string name="cancel">Cancel </string>
+
+    <string name="menu_events">Events</string>
+    <string name="menu_tickets">My Tickets</string>
+    <string name="menu_cafeteria">Cafeteria</string>
+    <string name="menu_vouchers">My Vouchers</string>
+    <string name="menu_val_tickets">Validate Tickets</string>
+    <string name="menu_val_order">My \n Transactions</string>
+    <string name="add_product">Add Product</string>
+    <string name="add_product_to_order">Add Products To Order</string>
+    <string name="add_voucher">Add Voucher</string>
+    <string name="next"> Next </string>
+    <string name="product"> Product </string>
+    <string name="register_here"> Don\'t have an account? Register here. </string>
+    <string name="quantity"> Quantity </string>
+    <string name="order_done"> Complete Order </string>
+    <string name="val_order"> Validate your order by placing the phone next to the cafeteria terminal. </string>
+    <string name="val_tickets"> Validate your tickets by placing the phone next to the ticket terminal. </string>
+</resources>
